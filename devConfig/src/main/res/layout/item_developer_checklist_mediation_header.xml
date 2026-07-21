@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@drawable/bg_developer_checklist_table_header"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:paddingVertical="@dimen/_8sdp">
+
+        <TextView
+            style="@style/text_bold_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:text="@string/developer_checklist_mediation_col_network"
+            android:textColor="@color/textPrimary" />
+
+        <TextView
+            style="@style/text_bold_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:text="@string/developer_checklist_mediation_col_status"
+            android:textColor="@color/textPrimary" />
+
+        <TextView
+            style="@style/text_bold_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="end"
+            android:text="@string/developer_checklist_mediation_col_adapter"
+            android:textColor="@color/textPrimary" />
+    </LinearLayout>
+</layout>

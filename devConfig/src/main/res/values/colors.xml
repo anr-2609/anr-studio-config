@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="color_main">#0573B8</color>
+    <color name="color_bg_main">#F4F4F4</color>
+    <color name="color_9E9E9E">#9E9E9E</color>
+    <color name="colorDisable">#bcbcbc</color>
+    <color name="textPrimary">#1F1F1F</color>
+    <color name="color_button">#3397FF</color>
+    <color name="color_checklist_enabled">#4CAF50</color>
+    <color name="color_FFA510">#FFA510</color>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_developer_setting_title" translatable="false">Developer Setting</string>
+    <string name="txt_developer_setting_subtitle" translatable="false">Internal tools for QA &amp; developers</string>
+    <string name="txt_developer_setting_unlimited_ads" translatable="false">Unlimited Ads</string>
+    <string name="txt_developer_setting_unlimited_ads_hint" translatable="false">Enable to show all ad placements</string>
+    <string name="txt_apply" translatable="false">Apply</string>
+    <string name="txt_show_checklist_option" translatable="false">Show Checklist option</string>
+    <string name="txt_admin_ads_unlimited_enabled" translatable="false">Unlimited Ads mode enabled</string>
+    <string name="txt_admin_ads_unlimited_disabled" translatable="false">Unlimited Ads mode disabled</string>
+
+    <string name="developer_checklist_title" translatable="false">Developer Checklist</string>
+    <string name="developer_checklist_section_sdk" translatable="false">SDK &amp; Libraries</string>
+    <string name="developer_checklist_section_tracking" translatable="false">Tracking — Adjust &amp; Facebook</string>
+    <string name="developer_checklist_section_mediation" translatable="false">Mediation Networks</string>
+    <string name="developer_checklist_mediation_col_network" translatable="false">Network</string>
+    <string name="developer_checklist_mediation_col_status" translatable="false">Mediation</string>
+    <string name="developer_checklist_mediation_col_adapter" translatable="false">Adapter</string>
+    <string name="developer_checklist_mediation_loading" translatable="false">Checking mediation adapters…</string>
+    <string name="developer_checklist_mediation_empty" translatable="false">No mediation adapter detected</string>
+    <string name="developer_checklist_mediation_ready" translatable="false">READY</string>
+    <string name="developer_checklist_mediation_not_ready" translatable="false">NOT READY</string>
+    <string name="developer_checklist_mediation_sdk_only" translatable="false">SDK ONLY</string>
+    <string name="developer_checklist_mediation_not_integrated" translatable="false">MISSING</string>
+    <string name="developer_checklist_mediation_latency" translatable="false">Latency: %1$dms</string>
+    <string name="developer_checklist_section_ad_release" translatable="false">Ad Config — Release (%1$s)</string>
+    <string name="developer_checklist_nkh_studio" translatable="false">Erain-Ads-Version (Ads Lib)</string>
+    <string name="developer_checklist_play_services_ads" translatable="false">Google Play Services Ads</string>
+    <string name="developer_checklist_gdpr_module" translatable="false">Module Update GDPR</string>
+    <string name="developer_checklist_adjust_token" translatable="false">Adjust Token</string>
+    <string name="developer_checklist_facebook_app_id" translatable="false">Facebook App ID</string>
+    <string name="developer_checklist_facebook_client_token" translatable="false">Facebook Client Token</string>
+    <string name="developer_checklist_tiktok_event_token" translatable="false">TikTok Event Token</string>
+    <string name="developer_checklist_admob_app_id" translatable="false">AdMob Application ID</string>
+    <string name="developer_checklist_enabled" translatable="false">ON</string>
+    <string name="developer_checklist_disabled" translatable="false">OFF</string>
+    <string name="developer_checklist_na" translatable="false">N/A</string>
+    <string name="developer_checklist_load_error" translatable="false">Failed to load: %1$s</string>
+    <string name="developer_checklist_build_debug" translatable="false">DEBUG · v%1$s</string>
+    <string name="developer_checklist_build_release" translatable="false">RELEASE · v%1$s</string>
+    <string name="developer_checklist_section_item_count" translatable="false">%1$d</string>
+    <string name="developer_checklist_expand_collapse" translatable="false">Expand or collapse section</string>
+</resources>

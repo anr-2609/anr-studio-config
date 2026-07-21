@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:background="@drawable/rounded_dialog"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNetworkName"
+                style="@style/text_bold_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:textColor="@color/textPrimary"
+                tools:text="Meta Audience Network" />
+
+            <TextView
+                android:id="@+id/tvMediationStatus"
+                style="@style/text_bold_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_6sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                tools:text="READY" />
+
+            <TextView
+                android:id="@+id/tvAdapterClass"
+                style="@style/text_regular_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:ellipsize="end"
+                android:fontFamily="monospace"
+                android:gravity="end"
+                android:maxLines="2"
+                android:textColor="@color/color_9E9E9E"
+                tools:text="FacebookMediationAdapter" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMediationDetail"
+            style="@style/text_regular_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@color/color_9E9E9E"
+            android:visibility="gone"
+            tools:text="Latency: 12ms"
+            tools:visibility="visible" />
+    </LinearLayout>
+</layout>
