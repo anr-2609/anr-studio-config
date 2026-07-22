@@ -54,9 +54,22 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.YOUR_GITHUB_USERNAME'
-                artifactId = 'fireants-dev-config'
-                version = '1.0.6'
+
+                groupId = 'com.fireants'
+                artifactId = 'dev-config'
+                version = '1.0.0'
+            }
+        }
+
+        repositories {
+            maven {
+                name = 'GitHubPackages'
+                url = uri('https://maven.pkg.github.com/longtq260900/fireants-dev-config')
+
+                credentials {
+                    username = project.findProperty('gpr.user') ?: System.getenv('GITHUB_ACTOR')
+                    password = project.findProperty('gpr.key') ?: System.getenv('GITHUB_TOKEN')
+                }
             }
         }
     }
