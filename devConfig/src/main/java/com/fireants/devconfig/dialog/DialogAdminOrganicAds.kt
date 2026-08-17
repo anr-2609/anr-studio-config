@@ -9,7 +9,7 @@ import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDialog
 import androidx.core.graphics.drawable.toDrawable
-import com.ads.nkh.util.SharePreferenceUtils
+import com.fireants.adsdk.util.SharePreferenceUtils
 import com.fireants.devconfig.FireAntsDevConfigRouter
 import com.fireants.devconfig.R
 import com.fireants.devconfig.ui.FireAntsDevConfigTheme

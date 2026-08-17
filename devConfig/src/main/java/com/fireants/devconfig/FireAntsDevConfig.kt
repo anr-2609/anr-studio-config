@@ -10,7 +10,7 @@ object FireAntsDevConfig {
 
     fun init(
         context: Context,
-        nkhStudioVersion: String,
+        fireantsAdsVersion: String,
         playServicesAdsVersion: String,
         gdprModuleVersion: String
     ) {
@@ -20,11 +20,11 @@ object FireAntsDevConfig {
         appConfig = FireAntsDevConfigAppConfig(
             isDebugBuild = (context.applicationInfo.flags and android.content.pm.ApplicationInfo.FLAG_DEBUGGABLE) != 0,
             versionName = versionName,
-            adjustToken = context.getHostString("adjust_token"),
+            appsFlyerKey = context.getHostString("appsflyer_key"),
             facebookAppId = context.getHostString("facebook_app_id"),
             facebookClientToken = context.getHostString("facebook_client_token"),
             tiktokEventToken = context.getHostString("event_token"),
-            nkhStudioVersion = nkhStudioVersion,
+            fireantsAdsVersion = fireantsAdsVersion,
             playServicesAdsVersion = playServicesAdsVersion,
             gdprModuleVersion = gdprModuleVersion
         )

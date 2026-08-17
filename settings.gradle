@@ -15,6 +15,14 @@ dependencyResolutionManagement {
         maven { url 'https://artifact.bytedance.com/repository/pangle/' }
         maven { url 'https://android-sdk.is.com/' }
         maven { url = uri("https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea") }
+        maven {
+            url = uri('https://maven.pkg.github.com/anr-2609/fireants-ad-sdk')
+
+            credentials {
+                username = providers.gradleProperty('gpr.user').orNull
+                password = providers.gradleProperty('gpr.key').orNull
+            }
+        }
     }
 }
 

@@ -23,8 +23,8 @@ object DeveloperChecklistRepository {
             title = context.getString(R.string.developer_checklist_section_sdk),
             children = listOf(
                 infoRow(
-                    context.getString(R.string.developer_checklist_nkh_studio),
-                    FireAntsDevConfig.requireAppConfig().nkhStudioVersion
+                    context.getString(R.string.developer_checklist_fireants_ads),
+                    FireAntsDevConfig.requireAppConfig().fireantsAdsVersion
                 ),
                 infoRow(
                     context.getString(R.string.developer_checklist_play_services_ads),
@@ -44,8 +44,8 @@ object DeveloperChecklistRepository {
             title = context.getString(R.string.developer_checklist_section_tracking),
             children = listOf(
                 infoRow(
-                    context.getString(R.string.developer_checklist_adjust_token),
-                    appConfig.adjustToken
+                    context.getString(R.string.developer_checklist_appsflyer_key),
+                    appConfig.appsFlyerKey
                 ),
                 infoRow(
                     context.getString(R.string.developer_checklist_facebook_app_id),

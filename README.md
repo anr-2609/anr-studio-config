@@ -13,7 +13,7 @@ android {
         // ... các config khác ...
         
         // Bắt buộc: Khai báo phiên bản các SDK đang sử dụng để hiển thị lên màn hình Checklist
-        buildConfigField "String", "NKH_STUDIO_VERSION", "\"5.8\"" // Có thể thay bằng biến
+        buildConfigField "String", "FIREANTS_ADS_VERSION", "\"1.0.7\"" // Có thể thay bằng biến
         buildConfigField "String", "PLAY_SERVICES_ADS_VERSION", "\"24.7.0\""
         buildConfigField "String", "GDPR_MODULE_VERSION", "\"2.0.2\""
     }
@@ -43,7 +43,7 @@ class GlobalApp : Application() {
         // Khởi tạo FireAntsDevConfig và truyền version vào
         FireAntsDevConfig.init(
             context = this,
-            nkhStudioVersion = BuildConfig.NKH_STUDIO_VERSION,
+            fireantsAdsVersion = BuildConfig.FIREANTS_ADS_VERSION,
             playServicesAdsVersion = BuildConfig.PLAY_SERVICES_ADS_VERSION,
             gdprModuleVersion = BuildConfig.GDPR_MODULE_VERSION
         )

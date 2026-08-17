@@ -11,7 +11,7 @@
 
     <string name="developer_checklist_title" translatable="false">Developer Checklist</string>
     <string name="developer_checklist_section_sdk" translatable="false">SDK &amp; Libraries</string>
-    <string name="developer_checklist_section_tracking" translatable="false">Tracking — Adjust &amp; Facebook</string>
+    <string name="developer_checklist_section_tracking" translatable="false">Tracking — AppsFlyer &amp; Facebook</string>
     <string name="developer_checklist_section_mediation" translatable="false">Mediation Networks</string>
     <string name="developer_checklist_mediation_col_network" translatable="false">Network</string>
     <string name="developer_checklist_mediation_col_status" translatable="false">Mediation</string>
@@ -24,10 +24,10 @@
     <string name="developer_checklist_mediation_not_integrated" translatable="false">MISSING</string>
     <string name="developer_checklist_mediation_latency" translatable="false">Latency: %1$dms</string>
     <string name="developer_checklist_section_ad_release" translatable="false">Ad Config — Release (%1$s)</string>
-    <string name="developer_checklist_nkh_studio" translatable="false">Erain-Ads-Version (Ads Lib)</string>
+    <string name="developer_checklist_fireants_ads" translatable="false">FireAnts Ads Version</string>
     <string name="developer_checklist_play_services_ads" translatable="false">Google Play Services Ads</string>
     <string name="developer_checklist_gdpr_module" translatable="false">Module Update GDPR</string>
-    <string name="developer_checklist_adjust_token" translatable="false">Adjust Token</string>
+    <string name="developer_checklist_appsflyer_key" translatable="false">AppsFlyer Key</string>
     <string name="developer_checklist_facebook_app_id" translatable="false">Facebook App ID</string>
     <string name="developer_checklist_facebook_client_token" translatable="false">Facebook Client Token</string>
     <string name="developer_checklist_tiktok_event_token" translatable="false">TikTok Event Token</string>

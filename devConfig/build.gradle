@@ -26,6 +26,7 @@ android {
 
     kotlinOptions {
         jvmTarget = '17'
+        freeCompilerArgs += ["-Xskip-metadata-version-check"]
     }
 
     buildFeatures {
@@ -45,7 +46,7 @@ dependencies {
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     implementation 'com.intuit.ssp:ssp-android:1.1.0'
 
-    implementation "com.github.trongluan99:NKH-Studio:$nkh_studio_version"
+    implementation "com.fireants:ads:$fireants_ads_sdk"
     implementation "com.google.android.gms:play-services-ads:$play_services_ads_version"
 }
 
@@ -57,14 +58,14 @@ afterEvaluate {
 
                 groupId = 'com.fireants'
                 artifactId = 'dev-config'
-                version = '1.0.0'
+                version = '1.0.1'
             }
         }
 
         repositories {
             maven {
                 name = 'GitHubPackages'
-                url = uri('https://maven.pkg.github.com/longtq260900/fireants-dev-config')
+                url = uri('https://maven.pkg.github.com/anr-2609/fireants-dev-config')
 
                 credentials {
                     username = project.findProperty('gpr.user') ?: System.getenv('GITHUB_ACTOR')
