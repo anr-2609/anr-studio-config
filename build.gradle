@@ -3,7 +3,7 @@ buildscript {
         compile_sdk_version = 36
         min_sdk_version = 24
         anrstudio_ads_sdk = '1.0.9'
-        play_services_ads_version = '24.7.0'
+        play_services_ads_version = '25.3.0'
         module_update_gdpr_version = '2.0.2'
         androidx_core_ktx_version = '1.17.0'
         androidx_appcompat_version = '1.7.1'
