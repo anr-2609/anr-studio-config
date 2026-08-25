@@ -16,7 +16,7 @@ dependencyResolutionManagement {
         maven { url 'https://android-sdk.is.com/' }
         maven { url = uri("https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea") }
         maven {
-            url = uri('https://maven.pkg.github.com/anr-2609/fireants-ad-sdk')
+            url = uri('https://maven.pkg.github.com/anr-2609/anr-studio-ads')
 
             credentials {
                 username = providers.gradleProperty('gpr.user').orNull
@@ -26,5 +26,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "fireants-dev-config"
-include ':devConfig'
+rootProject.name = "anr-studio-config"
+include ':config'

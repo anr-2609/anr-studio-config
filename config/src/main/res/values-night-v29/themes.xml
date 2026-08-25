@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AnrStudioConfigDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="colorPrimary">@color/color_main</item>
+        <item name="colorAccent">@color/color_main</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/color_9E9E9E</item>
+    </style>
+</resources>
