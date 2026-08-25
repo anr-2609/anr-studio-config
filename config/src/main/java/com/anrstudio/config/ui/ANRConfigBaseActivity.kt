@@ -7,20 +7,20 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 
-abstract class AnrStudioConfigBaseActivity<VB : ViewDataBinding> : AppCompatActivity() {
+abstract class ANRConfigBaseActivity<VB : ViewDataBinding> : AppCompatActivity() {
 
     protected lateinit var binding: VB
 
     protected abstract fun getLayoutId(): Int
 
     override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(AnrStudioConfigTheme.wrapActivityBase(newBase))
+        super.attachBaseContext(ANRConfigTheme.wrapActivityBase(newBase))
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_NO
         super.onCreate(savedInstanceState)
-        AnrStudioConfigTheme.applyLightWindow(window)
+        ANRConfigTheme.applyLightWindow(window)
         binding = DataBindingUtil.setContentView(this, getLayoutId())
         binding.lifecycleOwner = this
         onBind()

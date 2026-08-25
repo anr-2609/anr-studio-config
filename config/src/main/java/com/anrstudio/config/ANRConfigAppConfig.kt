@@ -1,6 +1,6 @@
 package com.anrstudio.config
 
-data class AnrStudioConfigAppConfig(
+data class ANRConfigAppConfig(
     val isDebugBuild: Boolean,
     val versionName: String,
     val appsFlyerKey: String,

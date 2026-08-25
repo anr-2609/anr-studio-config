@@ -5,7 +5,7 @@ import android.content.Context
 import android.content.Intent
 import com.anrstudio.config.ui.DeveloperChecklistActivity
 
-object AnrStudioConfigRouter {
+object ANRConfigRouter {
 
     fun openDeveloperChecklist(fromActivity: Activity) {
         fromActivity.startActivity(Intent(fromActivity, DeveloperChecklistActivity::class.java))
