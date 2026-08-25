@@ -3,10 +3,10 @@ package com.anrstudio.config
 import android.content.Context
 import android.os.Build
 
-object AnrStudioConfig {
+object ANRConfig {
 
     @Volatile
-    private var appConfig: AnrStudioConfigAppConfig? = null
+    private var appConfig: ANRConfigAppConfig? = null
 
     fun init(
         context: Context,
@@ -17,7 +17,7 @@ object AnrStudioConfig {
         val packageInfo = getPackageInfoCompat(context)
         val versionName = packageInfo?.versionName?.takeIf { it.isNotBlank() } ?: "N/A"
 
-        appConfig = AnrStudioConfigAppConfig(
+        appConfig = ANRConfigAppConfig(
             isDebugBuild = (context.applicationInfo.flags and android.content.pm.ApplicationInfo.FLAG_DEBUGGABLE) != 0,
             versionName = versionName,
             appsFlyerKey = context.getHostString("appsflyer_key"),
@@ -30,7 +30,7 @@ object AnrStudioConfig {
         )
     }
 
-    internal fun requireAppConfig(): AnrStudioConfigAppConfig {
+    internal fun requireAppConfig(): ANRConfigAppConfig {
         return appConfig
             ?: error("AnrStudioConfig.init() must be called before using developer settings.")
     }

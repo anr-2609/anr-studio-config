@@ -2,7 +2,7 @@ package com.anrstudio.config.ui
 
 import android.content.Context
 import android.content.pm.PackageManager
-import com.anrstudio.config.AnrStudioConfig
+import com.anrstudio.config.ANRConfig
 import com.anrstudio.config.R
 import com.anrstudio.config.utils.MediationCheckUtils
 import org.json.JSONObject
@@ -24,20 +24,20 @@ object DeveloperChecklistRepository {
             children = listOf(
                 infoRow(
                     context.getString(R.string.developer_checklist_anrstudio_ads),
-                    AnrStudioConfig.requireAppConfig().anrstudioAdsVersion
+                    ANRConfig.requireAppConfig().anrstudioAdsVersion
                 ),
                 infoRow(
                     context.getString(R.string.developer_checklist_play_services_ads),
-                    AnrStudioConfig.requireAppConfig().playServicesAdsVersion
+                    ANRConfig.requireAppConfig().playServicesAdsVersion
                 ),
                 infoRow(
                     context.getString(R.string.developer_checklist_gdpr_module),
-                    AnrStudioConfig.requireAppConfig().gdprModuleVersion
+                    ANRConfig.requireAppConfig().gdprModuleVersion
                 )
             )
         )
 
-        val appConfig = AnrStudioConfig.requireAppConfig()
+        val appConfig = ANRConfig.requireAppConfig()
         addSection(
             items = items,
             sectionId = DeveloperChecklistSectionId.TRACKING,

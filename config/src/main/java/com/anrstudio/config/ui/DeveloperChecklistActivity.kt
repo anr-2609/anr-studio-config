@@ -2,13 +2,13 @@ package com.anrstudio.config.ui
 
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.anrstudio.config.AnrStudioConfig
+import com.anrstudio.config.ANRConfig
 import com.anrstudio.config.R
 import com.anrstudio.config.databinding.ActivityDeveloperChecklistBinding
 import com.anrstudio.config.utils.MediationCheckUtils
 import com.anrstudio.config.utils.click
 
-class DeveloperChecklistActivity : AnrStudioConfigBaseActivity<ActivityDeveloperChecklistBinding>() {
+class DeveloperChecklistActivity : ANRConfigBaseActivity<ActivityDeveloperChecklistBinding>() {
 
     private var checklistAdapter: DeveloperChecklistAdapter? = null
 
@@ -41,7 +41,7 @@ class DeveloperChecklistActivity : AnrStudioConfigBaseActivity<ActivityDeveloper
     }
 
     private fun bindBuildVariantBadge() {
-        val config = AnrStudioConfig.requireAppConfig()
+        val config = ANRConfig.requireAppConfig()
         binding.tvBuildVariant.apply {
             text = if (config.isDebugBuild) {
                 getString(R.string.developer_checklist_build_debug, config.versionName)

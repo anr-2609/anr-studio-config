@@ -10,9 +10,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatDialog
 import androidx.core.graphics.drawable.toDrawable
 import com.anrstudio.ads.util.SharePreferenceUtils
-import com.anrstudio.config.AnrStudioConfigRouter
+import com.anrstudio.config.ANRConfigRouter
 import com.anrstudio.config.R
-import com.anrstudio.config.ui.AnrStudioConfigTheme
+import com.anrstudio.config.ui.ANRConfigTheme
 import com.anrstudio.config.databinding.DialogAdminOrganicAdsBinding
 import com.anrstudio.config.utils.click
 
@@ -28,12 +28,12 @@ object DialogAdminOrganicAds {
         val activity = context.findActivity() ?: return
         if (activity.isFinishing || activity.isDestroyed) return
 
-        val inflater = LayoutInflater.from(AnrStudioConfigTheme.wrap(activity))
+        val inflater = LayoutInflater.from(ANRConfigTheme.wrap(activity))
         val binding = DialogAdminOrganicAdsBinding.inflate(inflater)
         val dialog = AppCompatDialog(activity, R.style.AnrStudioConfigDialog)
         dialog.supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.window?.setBackgroundDrawable(Color.TRANSPARENT.toDrawable())
-        AnrStudioConfigTheme.applyLightWindow(dialog.window)
+        ANRConfigTheme.applyLightWindow(dialog.window)
         dialog.setCancelable(false)
 
         syncSwitchFromPreference(context, binding)
@@ -41,7 +41,7 @@ object DialogAdminOrganicAds {
 
         binding.btnChecklist.click {
             dialog.dismiss()
-            AnrStudioConfigRouter.openDeveloperChecklist(activity)
+            ANRConfigRouter.openDeveloperChecklist(activity)
         }
 
         binding.btnApply.click {

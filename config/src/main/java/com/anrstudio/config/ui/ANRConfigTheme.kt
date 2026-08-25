@@ -7,7 +7,7 @@ import android.view.Window
 import androidx.annotation.StyleRes
 import androidx.appcompat.view.ContextThemeWrapper
 import com.anrstudio.config.R
-internal object AnrStudioConfigTheme {
+internal object ANRConfigTheme {
 
     fun wrap(
         context: Context,
