@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         minSdk rootProject.ext.min_sdk_version
-        versionName "1.0.4"
+        versionName "1.0.6"
     }
 
     publishing {
@@ -65,7 +65,7 @@ afterEvaluate {
 
                 groupId = 'com.github.anr-2609.anr-studio-config'
                 artifactId = 'config'
-                version = System.getenv('VERSION') ?: '1.0.4'
+                version = System.getenv('VERSION') ?: '1.0.6'
             }
         }
     }
