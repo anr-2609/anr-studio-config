@@ -2,4 +2,4 @@ jdk:
   - openjdk17
 
 install:
-  - ./gradlew :ads:publishToMavenLocal -x lint -x test
+  - ./gradlew publishToMavenLocal -x lint -x test
